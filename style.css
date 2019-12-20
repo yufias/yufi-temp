@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    position: fixed;
+    background-color: skyblue;
+    width: 100%;
+    display: inline-block;
+    z-index: 4;
+}
+
+header .fa-thermometer-full {
+    color: white;
+    padding: 10px;
+    font-size: 36px;
+}
+
+header nav {
+    position: relative;
+    float: right;
+}
+
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    width: 80px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#welcome {
+    color: skyblue;
+    position: relative;
+    top: 70px;
+    text-align: center;
+    font-size: 36px;
+    font-family: Georgia;
+}
+
+main {
+    background-color: skyblue;
+    color: white;
+    position: relative;
+    top: 60px;
+    width: 80%;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+#isi {
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+    color: skyblue;
+    top: 20px;
+    bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 160px;
+    height: 120px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+    bottom: 10px;
+}
+
+#calculator {
+    position: relative;
+    top: 5px;
+    margin-left: 4px;
+}
+
+#button {
+    background-color: skyblue;
+    /* Green */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+}

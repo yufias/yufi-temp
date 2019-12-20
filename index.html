@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Final project phase 0</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <!-- <i class="fa fa-gamepad"></i> -->
+        <i class="fa fa-thermometer-full"></i>
+        <nav>
+            <ul>
+                <li><a href="index.html">Celcius</a></li>
+                <li><a href="fahrenheit.html">Fahrenheit</a></li>
+                <li><a href="kelvin.html">Kelvin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome"></section>
+
+    <main>
+        <section id="isi">
+            <center>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBSBda2ZBLSyoE-sDePeJ3hK2Bu8PZ826LkrWoUL69a5D-aDW&s"
+                    alt="temperature" />
+            </center>
+
+            <br />
+            <br />
+            <hr color="skyblue" />
+            <form>
+                <center>
+                    <b>Input temperature in celcius : </b> <br />
+                    <input type="number" id="celcius" placeholder="input celcius number" />
+                    <br />
+                    <br />
+                    <button type="button" id="button" onclick="celsiusCal()">
+                        Calculate
+                    </button>
+                    <hr width="600px" color="skyblue" />
+                    <b>Fahrenheit : </b><span id="outputFahrenheit"></span> <br />
+                    <br />
+                    <b>Kelvin : </b><span id="outputKelvin"></span> <br />
+                    <br />
+                </center>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("welcome").innerHTML = "Temperature Calculator";
+
+        function celsiusCal() {
+            if (document.getElementById("celcius").value === "") {
+                alert("Please input the celcius number");
+            } else {
+                let hasilF = Number(document.getElementById("celcius").value);
+                document.getElementById("outputFahrenheit").innerHTML =
+                    (hasilF * 9 / 5) + 32;
+                document.getElementById("outputKelvin").innerHTML = hasilF + 273.15;
+            }
+        }
+    </script>
+</body>
+
+</html>
