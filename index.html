@@ -55,20 +55,7 @@
         </section>
     </main>
 
-    <script>
-        document.getElementById("welcome").innerHTML = "Temperature Calculator";
-
-        function celsiusCal() {
-            if (document.getElementById("celcius").value === "") {
-                alert("Please input the celcius number");
-            } else {
-                let hasilF = Number(document.getElementById("celcius").value);
-                document.getElementById("outputFahrenheit").innerHTML =
-                    (hasilF * 9 / 5) + 32;
-                document.getElementById("outputKelvin").innerHTML = hasilF + 273.15;
-            }
-        }
-    </script>
+    <script src="convert.js"></script>
 </body>
 
 </html>

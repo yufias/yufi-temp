@@ -51,20 +51,7 @@
         </section>
     </main>
 
-    <script>
-        document.getElementById("welcome").innerHTML = "Temperature Calculator";
-
-        function fahrenheitCal() {
-            if (document.getElementById("fahrenheit").value === "") {
-                alert("Please input the fahrenheit number");
-            } else {
-                let hasilF = Number(document.getElementById("fahrenheit").value);
-                document.getElementById("outputCelcius").innerHTML = (hasilF - 32) * 5 / 9;
-                document.getElementById("outputKelvin").innerHTML =
-                    ((hasilF - 32) * 5) / 9 + 273.15;
-            }
-        }
-    </script>
+    <script src="convert.js"></script>
 </body>
 
 </html>
